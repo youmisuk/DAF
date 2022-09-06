@@ -6,7 +6,7 @@
 
 As algorithmic decision making is increasingly deployed in every walk of life, many researchers have raised concerns about fairness-related bias from such algorithms. But there is little research on harnessing psychometric methods to uncover potential discriminatory bias inside decision making algorithms. The main goal of this paper is to propose a new framework for algorithmic fairness based on *differential item functioning* (DIF), which has been commonly used to measure item fairness in psychometrics. Our fairness notion, which we call *differential algorithmic functioning* (DAF), is defined based on three pieces of information: a decision variable, a "fair" variable, and a protected variable such as race or gender. Under the DAF framework, an algorithm can exhibit uniform DAF, nonuniform DAF, or neither (i.e., non-DAF). For detecting DAF, we provide modifications of well-established DIF methods: Mantel-Haenszel test, logistic regression, and residual-based DAF. We demonstrate our framework through a real dataset concerning decision-making algorithms for grade retention in K-12 education in the United States. See Suk
 and Han (2022)
-\<[doi:10.31234/osf.io/4cpdn](https://psyarxiv.com/4cpdn)\>
+\<[doi:XXX](https://doi.org/XXX)\>
 for details.
 
 
@@ -36,7 +36,7 @@ summary(dafLogistic)
 - A residual-based DAF approach 
 
 ``` r
-source(".../R/residualDAF.R") # read R code for residual-based DAF.
+source("https://github.com/youmisuk/DAF/blob/main/R/residualDAF.R") # read R code for residual-based DAF.
 
 dafResidual <- residualDAF(decision = dat$decision, # decision
                            group = dat$female, # group membership
