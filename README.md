@@ -36,7 +36,7 @@ summary(dafLogistic)
 - A residual-based DAF approach 
 
 ``` r
-source("https://github.com/youmisuk/DAF/blob/main/R/residualDAF.R") # read R code for residual-based DAF.
+source(".../R/residualDAF.R") # read R code for residual-based DAF.
 
 dafResidual <- residualDAF(decision = dat$decision, # decision
                            group = dat$female, # group membership
