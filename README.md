@@ -33,7 +33,7 @@ anova(df1_difLogistic_0, df1_difLogistic)
 summary(dafLogistic)
 ```
 
-- A residual-based DAF approach 
+- Residual-based DAF
 
 ``` r
 source(".../R/residualDAF.R") # read R code for residual-based DAF.
