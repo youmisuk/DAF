@@ -10,7 +10,7 @@ residualDAF <- function(decision, group, focal.name = 1, fair.att, SL.library=c(
   # group ... group membership (focal versus reference)
   # focal.name ... the name of focal group
   # fair.att ... fair attribute 
-  # model ... estimation model with three options: glm, randomForest, superlearner  
+  # SL.library ... Either a character vector of prediction algorithms. Note function, listWrappers() prints a list of functions available in the SuperLearner package.
   
   sl_model <- SuperLearner(Y=decision, X=data.frame(fair.att),
                                family=binomial(),
