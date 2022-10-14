@@ -67,7 +67,7 @@ residualDAF <- function(decision, group, focal.name = 1, fair.att, SL.library=c(
   # create a vector of RDAF_R and RDAF_S
   est_mu_vec <- cbind(rdaf_r, rdaf_s)
   
-  # compute the last residual-based DIF statistics: RDAF_RS
+  # compute the last residual-based DAF statistics: RDAF_RS
   chisq <- as.numeric((est_mu_vec - mu_vec) %*% solve(cov_mat) %*% t(est_mu_vec - mu_vec)) 
   
   # calculate p-values for all three statistics
